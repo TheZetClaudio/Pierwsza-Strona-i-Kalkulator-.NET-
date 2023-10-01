@@ -1,0 +1,28 @@
+﻿@model App1_1_10_2023.Models.Kalkulator
+ @{
+    ViewData["Title"] = "Kalkulator";
+    ViewBag.Title = "Kalkulator";
+}
+  <form>
+    <table>  
+         <tr>  
+            <th> First Number </th>   
+            <td> <input type="text" id="txtFirstNumber" name="firstNumber"  /> </td>  
+        </tr>  
+        <tr>  
+             <th> Last Number </th>  
+            <td> <input type="text" id="txtLastNumber" name="secondNumber"  /> </td>  
+        </tr>  
+        <tr>  
+         <th><input type="submit" name="Cal" value="Add"  />
+         <input type="submit" name="Cal" value="Sub" /> </th>  
+         <th>  <input type="submit" name="Cal" value="Mul"  />   
+         <input type="submit" name="Cal" value="Div"  /> </th>  
+        </tr>  
+        <tr>  
+            <th>Result</th>  
+            <td><input type="text" value="@ViewBag.Result" /> </td>  
+        </tr>  
+    </table></form>
+
+
